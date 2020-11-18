@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="15dp"
+    >
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_search"
+        android:hint="Enter movie names"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_search"
+        android:layout_toRightOf="@+id/ed_search"
+        android:layout_marginLeft="60dp"
+        android:text="search"
+        android:elevation="20dp"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:id="@+id/image"
+        android:layout_below="@+id/ed_search"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="45dp"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_year"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_id"
+        android:layout_below="@+id/tv_year"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/command"
+        android:layout_below="@id/tv_year"
+        />
+
+
+</RelativeLayout>
